@@ -8,8 +8,6 @@ public static class makeMesh
     {
         int width = heightmap.GetLength(0);
         int height = heightmap.GetLength(1);
-        Debug.Log(width);
-        Debug.Log(height);
         float topLeftX = (width - 1) / -2;
         float topLeftY = (height - 1) / 2;
 
