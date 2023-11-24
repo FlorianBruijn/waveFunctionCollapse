@@ -21,6 +21,7 @@ public class callMesh : MonoBehaviour
         //float[,] heightmap = waveFunction_v1.elevation(Xlen, Ylen, change);
         float[,] heightmap = perlinNiose.heightMap(Xlen, Ylen, seed, scale, octaves, percistance, lacunarity);
         MeshData meshData = makeMesh.generateMesh(heightmap);
+        nameTerrain.setTerrain(heightmap);
 
         filter.sharedMesh = meshData.createMesh();
         collider.sharedMesh = meshData.createMesh();

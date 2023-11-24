@@ -14,9 +14,9 @@ public static class makeMesh
         MeshData meshData = new MeshData(width, height);
         int vertexIndex = 0;
 
-        for (int y = 0; y < heightmap.GetLength(1); y++)
+        for (int y = 0; y < height; y++)
         {
-            for (int x = 0; x < heightmap.GetLength(0); x++)
+            for (int x = 0; x < width; x++)
             {
                 meshData.vertices[vertexIndex] = new Vector3(x + topLeftX, heightmap[x, y], y - topLeftY);
                 meshData.uvs[vertexIndex] = new Vector2(x / (float)width, y / (float)height);
