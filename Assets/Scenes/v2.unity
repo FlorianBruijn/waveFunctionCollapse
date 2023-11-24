@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 319083500}
   - component: {fileID: 319083503}
   - component: {fileID: 319083502}
+  - component: {fileID: 319083504}
   - component: {fileID: 319083501}
   m_Layer: 0
   m_Name: GameObject
@@ -242,8 +243,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319083499}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalScale: {x: 10, y: 100, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -261,9 +262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402ab427cd74dec41812f0d806413f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Xlen: 10
-  Ylen: 10
+  Xlen: 250
+  Ylen: 250
   seed: 1
+  scale: 25
+  octaves: 3
+  percistance: 0.5
+  lacunarity: 2.5
   filter: {fileID: 319083503}
   change: 0
 --- !u!23 &319083502
@@ -315,6 +320,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319083499}
+  m_Mesh: {fileID: 0}
+--- !u!64 &319083504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319083499}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &966894097
 GameObject:
