@@ -18,7 +18,7 @@ public static class nameTerrain
             {
                 switch (heightmap[x, y])
                 {
-                    case float n when(n<0.16):
+                    case float n when(n<0.25):
                         toReturn[x, y] = -1;
                         break;
                     case float n when (n < 0.30):
